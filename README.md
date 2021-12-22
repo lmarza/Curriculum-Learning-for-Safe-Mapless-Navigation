@@ -1,1 +1,1 @@
-# Kairos-TransferLearning
+# Curriculum Learning for Safe Mapless Navigation
