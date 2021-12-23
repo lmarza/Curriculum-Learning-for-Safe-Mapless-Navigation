@@ -25,7 +25,7 @@ from PPO import PPO
 def test():
     device = torch.device('cpu')
     ################## hyperparameters #################
-    env_name = "baseEnv"
+    env_name = "finalEnv"
     has_continuous_action_space = False
     max_ep_len = 1500           # max timesteps in one episode
     action_std = 0           # set same std for action distribution which was used while saving
@@ -72,15 +72,13 @@ def test():
 
     method = input('Select the training methodology to test:\n1 - E2E\n2 - TransferLearning \n3 - FineTuning\n\n')
     directory = "PPO_preTrained" + '/'
-    if method == 'E2E':
+    if method == '1':
         weights = directory + "PPO_E2E.pth"
-    elif method == 'Transfer':
+    elif method == '2':
         weights = directory + "PPO_TransferLearning.pth"
     else:
         weights = directory + "PPO_FineTuning.pth"
 
-    print("loading network from : " + weights)
-    #weights = './PPO_preTrained/PPO_finalEnvNew_0_E2E.pth'
     ppo_agent.load(weights)
      
     for net in ppo_agent.policy.children():
@@ -117,8 +115,7 @@ def test():
     log_f.write('episode,success,collision,avg_distances,method\n')
 
 
-    for testEpisode in range(30):
-        print(testEpisode)
+    for testEpisode in range(1):
         test_running_reward = 0
         test_running_collision_rate = 0
         distances = []
@@ -150,18 +147,19 @@ def test():
             ep_reward = 0
 
         
-        #print("============================================================================================")
+        print("============================================================================================")
         avg_test_reward = test_running_reward / total_test_episodes
         avg_test_reward = round(avg_test_reward, 2)
         avg_test_collision = test_running_collision_rate/total_test_episodes
         avg_test_collision = round(avg_test_collision, 2)
         avg_distance = ((sum(episode_timesteps))/sum(distances))/total_test_episodes
         avg_distance = round(avg_distance, 2)
-        log_f.write('{},{},{},{},{}\n'.format(testEpisode, avg_test_reward, avg_test_collision, avg_distance, method))
-        log_f.flush()
-        #print(f"average test reward : {avg_test_reward*100}%")
-        #print(f"violation rate: {test_running_violation_rate}/{total_test_episodes}")
-        #print("============================================================================================")
+        #log_f.write('{},{},{},{},{}\n'.format(testEpisode, avg_test_reward, avg_test_collision, avg_distance, method))
+        #log_f.flush()
+        print(f"average test reward : {avg_test_reward*100}%")
+        print(f"collision rate: {avg_test_collision*100}%")
+        print(f'distance_deviation: {avg_distance}')
+        print("============================================================================================")
                 
         avg_test_reward = 0
         avg_test_collision = 0

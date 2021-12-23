@@ -181,7 +181,7 @@ def train():
     log_f.write('episode,timestep,success, mean_reward\n')
     time_step = 0
     i_episode = 0
-    max_training_timesteps_first = int(1e6)
+    max_training_timesteps_first = 2 #int(1e6)
     success_rate = []
     mean_reward = []
     last_good = 0
@@ -205,7 +205,7 @@ def train():
     ########################################## Start with the second room ##########################################
 
 
-    env_name = "env2"
+    env_name = "intEnv"
     print("Training environment name : " + env_name)
     unity_env = UnityEnvironment( f"./envs/{env_name}/kairos", worker_id=np.random.randint(0, 1000))
     env = UnityToGymWrapper(unity_env, flatten_branched=True)
@@ -240,7 +240,7 @@ def train():
     i_episode = 0
     success_rate = []
     mean_reward = []
-    max_training_timesteps_second = int(2e6)
+    max_training_timesteps_second = 2# int(2e6)
     last_good = 0
 
 
