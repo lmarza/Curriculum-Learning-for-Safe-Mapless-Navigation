@@ -1,0 +1,13 @@
+name: cl-env
+channels:
+  - defaults
+dependencies:
+  - python=3.7.3
+  - scipy
+  - numpy
+  - matplotlib
+  - pytorch
+  - scipy
+  - gym
+  - gym-env=0.16.1
+  - mlagents=0.16.1
