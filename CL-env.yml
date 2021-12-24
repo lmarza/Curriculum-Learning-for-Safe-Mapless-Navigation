@@ -4,11 +4,8 @@ channels:
 dependencies:
   - python=3.7.3
   - pip:
-    - scipy
     - numpy
-    - matplotlib
     - torch
-    - scipy
     - gym
     - gym_unity==0.16.1
     - mlagents_envs==0.16.1
