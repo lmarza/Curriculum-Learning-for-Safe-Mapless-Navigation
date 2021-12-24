@@ -17,7 +17,7 @@ from PPO import PPO
 def train():
 
     # hyperparameters 
-    env_name = "finalEnvNew"
+    env_name = "finalEnv"
     
     has_continuous_action_space = False  # continuous action space; else discrete
 
@@ -52,7 +52,7 @@ def train():
 
 
     print("training environment name : " + env_name)
-    unity_env = UnityEnvironment( "./envs/finalEnvNew/kairos", worker_id=np.random.randint(0, 1000))
+    unity_env = UnityEnvironment( "./envs/finalEnv/kairos", worker_id=np.random.randint(0, 1000))
     env = UnityToGymWrapper( unity_env, flatten_branched=True )
 
     # state space dimension
