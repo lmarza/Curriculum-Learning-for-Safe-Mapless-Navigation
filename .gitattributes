@@ -1,4 +1,2 @@
-* linguist-vendored
-*.py linguist-vendored=true
 *.aspx linguist-vendored=false
 
