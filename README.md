@@ -32,6 +32,7 @@ This work investigates the effects of Curriculum Learning (CL)-based approaches 
 3.  Setup conda environment:
 	- `
 git clone https://github.com/LM095/Curriculum-Learning-for-Safe-Mapless-Navigation`
+	- `cd Curriculum-Learning-for-Safe-Mapless-Navigation`
 	- `conda env create -f CL-env.yml`
 	
 4.  If you want to delete this new conda environment:
