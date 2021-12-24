@@ -43,8 +43,10 @@ In this work we use three different methodologies namely Transfer of Learning, f
 
 
 ## Training 
+`conda activate cl-env`
 
-All the weights of the nets that you train with the various methods are automatically saved in the folder 
+
+>All the weights of the nets that you train with the various methods are automatically saved in the folder 
 `Curriculum-Learning-for-Safe-Mapless-Navigation/PPO_preTrained/`
 
 ### Step 1: Train E2E
