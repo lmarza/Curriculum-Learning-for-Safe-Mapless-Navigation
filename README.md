@@ -1,6 +1,13 @@
 # Curriculum Learning for Safe Mapless Navigation
 
-In The 37th ACM/SIGAPPSymposium on Applied Computing (SAC ’22), April 25–29, 2022, Virtual Event.
+The poster version of this paper has been accepted by the 37th ACM/SIGAPPSymposium on Applied Computing (SAC ’22), April 25–29, 2022, Virtual Event.
+The full paper is available at this [link](https://arxiv.org/abs/2112.12490)
+
+### Authors
+* **Luca Marzari** - luca.marzari@studenti.univr.it
+*  **Davide Corsi** - davide.corsi@univr.it
+*  **Enrico Marchesini** - enrico.marchesini@univr.it
+*  **Alessandro Farinelli** - alessandro.farinelli@univr.it
 
 ## Abstract
 This work investigates the effects of Curriculum Learning (CL)-based approaches on the agent's performance. In particular, we focus on the safety aspect of robotic mapless navigation, comparing over a standard end-to-end (E2E) training strategy. To this end, we present a CL approach that leverages Transfer of Learning (ToL) and fine-tuning in a Unity-based simulation with the Robotnik Kairos as a robotic agent. For a fair comparison, our evaluation considers an equal computational demand for every learning approach (i.e., the same number of interactions and difficulty of the environments) and confirms that our CL-based method that uses ToL outperforms the E2E methodology. In particular, we improve the average success rate and the safety of the trained policy, resulting in 10\% fewer collisions in unseen testing scenarios. To further confirm these results, we employ a formal verification tool to quantify the number of correct behaviors of Reinforcement Learning policies over desired specifications.
@@ -91,8 +98,4 @@ At line 28 of `test.py` file you can choose the environment for the testing phas
 ## ACKNOWLEDGMENTS
 The research has been partially supported by the projects ”Dipartimenti di Eccellenza 2018-2022”, funded by the Italian Ministry of Education, Universities and Research(MIUR).
 
-## Authors
-* **Luca Marzari** - luca.marzari@studenti.univr.it
-*  **Davide Corsi** - davide.corsi@univr.it
-*  **Enrico Marchesini** - enrico.marchesini@univr.it
-*  **Alessandro Farinelli** - alessandro.farinelli@univr.it
+
