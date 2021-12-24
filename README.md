@@ -33,8 +33,11 @@ This work investigates the effects of Curriculum Learning (CL)-based approaches 
 	- `
 git clone https://github.com/LM095/Curriculum-Learning-for-Safe-Mapless-Navigation`
 	- `conda env create -f CL-env.yml`
-
-
+	
+4.  If you want to delete this new conda environment:
+	- `conda env remove -n cl-env`
+	
+	
 In this work we use three different methodologies namely Transfer of Learning, fine-tuning, and finally, the classical E2E training. In this work, we consider the area occupied by obstacles and the smallest distance between two obstacles in the environment itself as a metric of difficulty. The biggest difficulties that we find in a navigation task are very close obstacles, narrow corridors, *U-shaped* walls. Hence, we insert all these complex components in a final environment, which we refer to as *finalEnv*, and then train the agent with three different methodologies.
 
 
