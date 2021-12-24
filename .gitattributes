@@ -1,4 +1,5 @@
 * linguist-vendored
+*.py linguist-vendored=false
 *.aspx linguist-vendored=false
 *.config linguist-vendored=false
 *.json linguist-vendored=false
