@@ -14,20 +14,17 @@ This work investigates the effects of Curriculum Learning (CL)-based approaches 
 
 
 ## Setup the environment for this work
->We suggest creating a virtual environment using Anaconda and installing all the dependencies reported above.
+> To use this repo you must have a linux system because the environments have been compiled for that system. We suggest creating a virtual environment using Anaconda and installing all the dependencies reported above.
 
 1. Download [Anaconda](https://www.anaconda.com/distribution/#download-section) for your System.
 
 2.  Install Anaconda
 	- On Linux/Mac 
-		- Use *sh Anacaonda{version}.sh* to install.
+		- Use *sh Anaconda{version}.sh* to install.
 		- Add it to the PATH during installation if you’re ok with it:
 			- First *export PATH=~/anaconda3/bin:$PATH*
 			- Then *source ~/.bashrc*
 		- *sudo apt-get install git* (may be required).
-	- On Windows
-		- Double click the installer to launch.
-		- *NB: during the installation, ensure to install "Anaconda Prompt" and use it for the other steps.*
 
 3.  Setup conda environment:
 	- `
