@@ -14,7 +14,7 @@ This work investigates the effects of Curriculum Learning (CL)-based approaches 
 
 
 ## Setup the environment for this work
-> To use this repo you must have a linux system because the environments have been compiled for that system. We suggest creating a virtual environment using Anaconda and installing all the dependencies reported above.
+> To use this repo you must have a linux system because the environments have been compiled in Unity for that system. We suggest creating a virtual environment using Anaconda and installing all the dependencies reported above.
 
 1. Download [Anaconda](https://www.anaconda.com/distribution/#download-section) for your System.
 
