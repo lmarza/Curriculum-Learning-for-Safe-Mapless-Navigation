@@ -98,9 +98,6 @@ def train():
     if not os.path.exists(directory):
           os.makedirs(directory)
 
-    weight_to_load = 'env2'
-    loading_path = directory + '/' + weight_to_load + '/' + "PPO_{}_{}_{}.pth".format(weight_to_load, random_seed, run_num_pretrained)
-
     directory = directory + '/' + env_name + '/'
     if not os.path.exists(directory):
           os.makedirs(directory)
@@ -163,7 +160,7 @@ def train():
                 violation_rate.append(0)
                 reward = 100.0
             else:
-                reward = 10 *(first_dist - new_distance) #max(0,(first_dist - new_distance))
+                reward = 10 *(first_dist - new_distance)
             
             mean_reward.append(reward)    
             # saving reward and is_terminals
@@ -184,7 +181,7 @@ def train():
             if done:
                 break
             
-        # print average reward last 50 episodes and save weights if success is greater than 96%
+        # print average reward last 100 episodes and save weights if success is greater than 70% and greater than the last one
         if i_episode % 100 == 0:
             print_avg_success = sum(success_rate[-100:])/100
             print_avg_success = round(print_avg_success, 2)
