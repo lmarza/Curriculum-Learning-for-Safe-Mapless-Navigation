@@ -94,6 +94,8 @@ At line 28 of `test.py` file you can choose the environment for the testing phas
 	
 
 ## Results testing:
+Given that we trained the robot using random spawn of both initial position and goal position, we performed this evaluation over several episodes. In particular, we report the average results obtained by testing the agent on three different randomly seeded runs of 1000 episodes each. All tests are performed on an Intel Core i5-11600K.
+
 ![](https://i.imgur.com/YWJU12s.png)
 <img src="https://i.imgur.com/P0WsSG8.png" width="450" height="400">
 
