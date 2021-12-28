@@ -103,4 +103,14 @@ Given that we trained the robot using random spawn of both initial position and 
 ## ACKNOWLEDGMENTS
 The research has been partially supported by the projects ”Dipartimenti di Eccellenza 2018-2022”, funded by the Italian Ministry of Education, Universities and Research(MIUR).
 
+## Citation
+Curriculum Learning for Safe Mapless Navigation:
+```
+@article{marzari2021curriculum,
+  title={Curriculum Learning for Safe Mapless Navigation},
+  author={Marzari, Luca and Corsi, Davide and Marchesini, Enrico and Farinelli, Alessandro},
+  journal={arXiv preprint arXiv:2112.12490},
+  year={2021}
+}
+```
 
