@@ -106,11 +106,12 @@ The research has been partially supported by the projects ”Dipartimenti di Ecc
 ## Citation
 Curriculum Learning for Safe Mapless Navigation:
 ```
-@article{marzari2021curriculum,
-  title={Curriculum Learning for Safe Mapless Navigation},
+@inproceedings{marzari2022curriculum,
+  title={Curriculum learning for safe mapless navigation},
   author={Marzari, Luca and Corsi, Davide and Marchesini, Enrico and Farinelli, Alessandro},
-  journal={arXiv preprint arXiv:2112.12490},
-  year={2021}
+  booktitle={Proceedings of the 37th ACM/SIGAPP Symposium on Applied Computing},
+  pages={766--769},
+  year={2022}
 }
 ```
 
